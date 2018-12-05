@@ -173,19 +173,21 @@ class Header extends Component{
                 callback={this.moreHandleClick}  />
         );
         return (
-            <div className={styles.wap}>
-                <div className={styles.headerWap}>
-                    <div className={styles.averageBox}>
-                        {left}
+            <div className={styles.placeholderWap}>
+                <div className={styles.wap}>
+                    <div className={styles.headerWap}>
+                        <div className={styles.averageBox}>
+                            {left}
+                        </div>
+                        <div className={styles.averageBox}>
+                            {title}
+                        </div>
+                        <div className={styles.averageBox}>
+                            {right}
+                        </div>
                     </div>
-                    <div className={styles.averageBox}>
-                        {title}
-                    </div>
-                    <div className={styles.averageBox}>
-                        {right}
-                    </div>
+                    {more}
                 </div>
-                {more}
             </div>
         )
     }
